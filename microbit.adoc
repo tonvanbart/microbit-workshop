@@ -1,0 +1,41 @@
+= Devoxx4kids Microbit 
+:Author:    Matthijs Thoolen  
+:Email:     <matthijs.thoolen@codesquad.nl>
+:Revision:  0.1
+
+:toc:
+:toc-title: Inhoud
+:description: Devoxx4kids Microbit workshop 
+
+In deze workshop gaan we samen aan de slag met de Microbit. Aan de hand van een aantal video's maken we opdrachten met de Microbit. We beginnen eerst met een uitleg, want wat is die Microbit eigenlijk? 
+
+== Wat is de microbit?
+
+video::0EUzE_Q3W98[youtube,options="modest",width=640,height=480]
+
+hopelijk is zo duidelijk wat we gaan doen. Heb je vragen? Steek dan zeker je hand even op!
+
+== Jullie namen op de Microbit
+
+video::ey6bCUwgXlg[youtube]
+ez pz lemon squeezy 
+
+== derde video 
+
+beschrijving bij derde video
+
+== vierde video
+
+beschrijving bij derde video
+
+== vijfde video
+
+beschrijving bij derde video
+
+== zesde video
+
+beschrijving bij derde video
+
+== extra opdrachten
+
+mogelijke extra opdrachten
