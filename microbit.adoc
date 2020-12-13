@@ -15,14 +15,27 @@ video::0EUzE_Q3W98[youtube,options="modest",width=640,height=480]
 
 hopelijk is zo duidelijk wat we gaan doen. Heb je vragen? Steek dan zeker je hand even op!
 
-== Jullie namen op de Microbit
+== Programmeer je naam in licht met een Microbit
 
-video::ey6bCUwgXlg[youtube]
-ez pz lemon squeezy 
+video::ey6bCUwgXlg[youtube,options="modest",width=640,height=480,start=166]
 
-== derde video 
+. Start je browser
+. Ga naar http://makecode.microbit.org/
+. Klik op 'Nieuw project'
+. Volg de instructies uit de video
 
-beschrijving bij derde video
+Tip: mocht het te snel gaan, zet de video dan even op pauze
+
+== Bouw een digitale dobbelsteen 
+
+video::pY1bqTaSaJM[youtube,options="modest",width=640,height=480]
+
+. Start je browser
+. Ga naar http://makecode.microbit.org/
+. Klik op 'Nieuw project'
+. Volg de instructies uit de video
+
+Tip: mocht het te snel gaan, zet de video dan even op pauze
 
 == vierde video
 
