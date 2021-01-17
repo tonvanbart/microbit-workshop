@@ -36,7 +36,7 @@ Nu gaan we hetzelfde proberen als in het filmpje, maar dan met jullie eigen name
 . Nu mag de volgende het proberen. Zorg ervoor dat als er 'B' ingedrukt wordt de andere naam in jullie tweetal toont.
 
 Tip: mocht het te snel gaan, zet de video dan even op pauze of open onderstaande screenshots!
-
+====
 .Screenshots
 [%collapsible]
 ====
