@@ -32,7 +32,7 @@ video::ey6bCUwgXlg[youtube,options="modest",width=640,height=480,start=166]
 Nu gaan we hetzelfde proberen als in het filmpje, maar dan met jullie eigen namen.
 . Ga naar http://makecode.microbit.org/[MakeCode]
 . Klik op 'Nieuw project' om een nieuw project te openen en geef het een naam, bijvoorbeeld 'Namen tonen'.
-. Neem daar de blokken over zoals getoont in het filmpje en neem in het 'toon tekens' blok een van jullie namen over.
+. Neem daar de blokken over zoals getoond in het filmpje en neem in het 'toon tekens' blok een van jullie namen over.
 . Nu mag de volgende het proberen. Zorg ervoor dat als er 'B' ingedrukt wordt de andere naam in jullie tweetal toont.
 
 Tip: mocht het te snel gaan, zet de video dan even op pauze of open onderstaande screenshots!
