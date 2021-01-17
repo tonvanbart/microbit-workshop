@@ -96,9 +96,66 @@ image::images/bouw-een-digitale-dobbelsteen/stap10.png[]
 image::images/bouw-een-digitale-dobbelsteen/stap11.png[]
 ====
 
-== vierde video
+== Maak een digitaal kompas met je Microbit
 
-beschrijving bij derde video
+video::WV-jJ6ox7_g[youtube,options="modest",width=640,height=480]
+
+. Start je browser
+. Ga naar http://makecode.microbit.org/
+. Klik op 'Nieuw project'
+. Volg de instructies uit de video
+
+Tip: mocht het te snel gaan, zet de video dan even op pauze
+
+.Screenshots
+[%collapsible]
+====
+.Stap 1
+image::images/maak-een-digitaal-kompas-met-je-microbit/stap1.png[]
+.Stap 2
+image::images/maak-een-digitaal-kompas-met-je-microbit/stap2.png[]
+.Stap 3
+image::images/maak-een-digitaal-kompas-met-je-microbit/stap3.png[]
+.Stap 4
+image::images/maak-een-digitaal-kompas-met-je-microbit/stap4.png[]
+.Stap 5
+image::images/maak-een-digitaal-kompas-met-je-microbit/stap5.png[]
+.Stap 6
+image::images/maak-een-digitaal-kompas-met-je-microbit/stap6.png[]
+.Stap 7
+image::images/maak-een-digitaal-kompas-met-je-microbit/stap7.png[]
+.Stap 8
+image::images/maak-een-digitaal-kompas-met-je-microbit/stap8.png[]
+.Stap 9
+image::images/maak-een-digitaal-kompas-met-je-microbit/stap9.png[]
+====
+
+.Extra opdracht
+[%collapsible]
+====
+Probeer samen de volgende vraag te beantwoorden:
+
+* Waarom is het niet nodig om bij Oost ook te testen of het aantal graden groter is
+dan 45?
+
+Probeer de code zo uit te breiden dat de kompas 8 richtingen kan tonen.
+
+.8 windrichtingen +
+image::images/maak-een-digitaal-kompas-met-je-microbit/extra-opdracht-1/kompas-roos.jpg[]
+
+Tips:
+
+* Maak samen eerst een plan hoe jullie dit gaan aanpakken.
+* Teken het kompas op papier en bereken de grenzen van de 8 windrichtingen.
+====
+
+.Uitwerking extra opdracht
+[%collapsible]
+====
+.Oplossing
+image::images/maak-een-digitaal-kompas-met-je-microbit/extra-opdracht-1/uitwerking.png[]
+
+====
 
 == vijfde video
 
