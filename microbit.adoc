@@ -18,14 +18,24 @@ hopelijk is zo duidelijk wat we gaan doen. Heb je vragen? Steek dan zeker je han
 
 == Programmeer je naam in licht met een Microbit
 
+We gaan met wat hulp van een filmpje met de Microbit aan de slag. Als eerst gaan we proberen onze naam op de Microbit te tonen. Bekijk eerst het filmpje, en open daarna de opdracht.
+
+=== Filmpje  
+
 video::ey6bCUwgXlg[youtube,options="modest",width=640,height=480,start=166]
 
-. Start je browser
-. Ga naar http://makecode.microbit.org/
-. Klik op 'Nieuw project'
-. Volg de instructies uit de video
+=== Zelf doen
+.Klik hier om de opdracht te openen
+[%collapsible]
+====
 
-Tip: mocht het te snel gaan, zet de video dan even op pauze
+Nu gaan we hetzelfde proberen als in het filmpje, maar dan met jullie eigen namen.
+. Ga naar http://makecode.microbit.org/[MakeCode]
+. Klik op 'Nieuw project' om een nieuw project te openen en geef het een naam, bijvoorbeeld 'Namen tonen'.
+. Neem daar de blokken over zoals getoont in het filmpje en neem in het 'toon tekens' blok een van jullie namen over.
+. Nu mag de volgende het proberen. Zorg ervoor dat als er 'B' ingedrukt wordt de andere naam in jullie tweetal toont.
+
+Tip: mocht het te snel gaan, zet de video dan even op pauze of open onderstaande screenshots!
 
 .Screenshots
 [%collapsible]
