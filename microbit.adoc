@@ -6,6 +6,7 @@
 :toc:
 :toc-title: Inhoud
 :description: Devoxx4kids Microbit workshop 
+:figure-caption!:
 
 In deze workshop gaan we samen aan de slag met de Microbit. Aan de hand van een aantal video's maken we opdrachten met de Microbit. We beginnen eerst met een uitleg, want wat is die Microbit eigenlijk? 
 
@@ -26,6 +27,27 @@ video::ey6bCUwgXlg[youtube,options="modest",width=640,height=480,start=166]
 
 Tip: mocht het te snel gaan, zet de video dan even op pauze
 
+.Screenshots
+[%collapsible]
+====
+.Stap 1
+image::images/programmeer-je-naam-in-licht-met-een-microbit/stap1.png[]
+.Stap 2
+image::images/programmeer-je-naam-in-licht-met-een-microbit/stap2.png[]
+.Stap 3
+image::images/programmeer-je-naam-in-licht-met-een-microbit/stap3.png[]
+.Stap 4
+image::images/programmeer-je-naam-in-licht-met-een-microbit/stap4.png[]
+.Stap 5
+image::images/programmeer-je-naam-in-licht-met-een-microbit/stap5.png[]
+.Stap 6
+image::images/programmeer-je-naam-in-licht-met-een-microbit/stap6.png[]
+.Stap 7
+image::images/programmeer-je-naam-in-licht-met-een-microbit/stap7.png[]
+.Stap 8
+image::images/programmeer-je-naam-in-licht-met-een-microbit/stap8.png[]
+====
+
 == Bouw een digitale dobbelsteen 
 
 video::pY1bqTaSaJM[youtube,options="modest",width=640,height=480]
@@ -36,6 +58,33 @@ video::pY1bqTaSaJM[youtube,options="modest",width=640,height=480]
 . Volg de instructies uit de video
 
 Tip: mocht het te snel gaan, zet de video dan even op pauze
+
+.Screenshots
+[%collapsible]
+====
+.Stap 1
+image::images/bouw-een-digitale-dobbelsteen/stap1.png[]
+.Stap 2
+image::images/bouw-een-digitale-dobbelsteen/stap2.png[]
+.Stap 3
+image::images/bouw-een-digitale-dobbelsteen/stap3.png[]
+.Stap 4
+image::images/bouw-een-digitale-dobbelsteen/stap4.png[]
+.Stap 5
+image::images/bouw-een-digitale-dobbelsteen/stap5.png[]
+.Stap 6
+image::images/bouw-een-digitale-dobbelsteen/stap6.png[]
+.Stap 7
+image::images/bouw-een-digitale-dobbelsteen/stap7.png[]
+.Stap 8
+image::images/bouw-een-digitale-dobbelsteen/stap8.png[]
+.Stap 9
+image::images/bouw-een-digitale-dobbelsteen/stap9.png[]
+.Stap 10
+image::images/bouw-een-digitale-dobbelsteen/stap10.png[]
+.Stap 11
+image::images/bouw-een-digitale-dobbelsteen/stap11.png[]
+====
 
 == vierde video
 
