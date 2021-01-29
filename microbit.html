@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.12">
-<meta name="author" content="Matthijs Thoolen">
-<title>Devoxx4kids Microbit</title>
+<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="description" content="Devoxx4kids Microbit workshop">
+<meta name="author" content="Matthijs Thoolen, Cor Faber, Mike Padberg, Jorick van Rhenen">
+<title>Microbit Workshop</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -48,7 +49,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 *,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -63,8 +64,10 @@ img{-ms-interpolation-mode:bicubic}
 img,object,svg{display:inline-block;vertical-align:middle}
 textarea{height:auto;min-height:50px}
 select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
 .subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
-div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
 a{color:#2156a5;text-decoration:underline;line-height:inherit}
 a:hover,a:focus{color:#1d4b8f}
 a img{border:0}
@@ -104,22 +107,19 @@ h1{font-size:2.75em}
 h2{font-size:2.3125em}
 h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
 h4{font-size:1.4375em}}
-table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede;word-wrap:normal}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
 table thead,table tfoot{background:#f7f8f7}
 table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
 table tr.even,table tr.alt{background:#f8f8f7}
-table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
 h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
-.center{margin-left:auto;margin-right:auto}
-.stretch{width:100%}
 .clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
 .clearfix::after,.float-group::after{clear:both}
-:not(pre).nobreak{word-wrap:normal}
-:not(pre).nowrap{white-space:nowrap}
-:not(pre).pre-wrap{white-space:pre-wrap}
-:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
 pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
 pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
 pre>code{display:block}
@@ -184,7 +184,7 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
 #content #toc>:first-child{margin-top:0}
 #content #toc>:last-child{margin-bottom:0}
-#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
 #footer-text{color:rgba(255,255,255,.8);line-height:1.44}
 #content{margin-bottom:.625em}
 .sect1{padding-bottom:.625em}
@@ -207,7 +207,7 @@ table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font
 .admonitionblock>table td.icon{text-align:center;width:80px}
 .admonitionblock>table td.icon img{max-width:none}
 .admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
-.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
 .exampleblock>.content>:first-child{margin-top:0}
@@ -217,7 +217,7 @@ table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font
 .sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
 .exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
-.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
 .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
@@ -263,20 +263,21 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
 .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
 p.tableblock:last-child{margin-bottom:0}
-td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
 td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
 table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
-table.grid-all>*>tr>*{border-width:1px}
-table.grid-cols>*>tr>*{border-width:0 1px}
-table.grid-rows>*>tr>*{border-width:1px 0}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
 table.frame-all{border-width:1px}
-table.frame-ends{border-width:1px 0}
 table.frame-sides{border-width:0 1px}
-table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
-table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
-table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
-table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
 table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
 th.halign-left,td.halign-left{text-align:left}
 th.halign-right,td.halign-right{text-align:right}
@@ -285,7 +286,7 @@ th.valign-top,td.valign-top{vertical-align:top}
 th.valign-bottom,td.valign-bottom{vertical-align:bottom}
 th.valign-middle,td.valign-middle{vertical-align:middle}
 table thead th,table tfoot th{font-weight:bold}
-tbody tr th{background:#f7f8f7}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
 tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
 p.tableblock>code:only-child{background:none;padding:0}
 p.tableblock{font-size:1em}
@@ -314,7 +315,6 @@ ol.lowergreek{list-style-type:lower-greek}
 .hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
 td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
 td.hdlist1{font-weight:bold;padding-bottom:1.25em}
-td.hdlist2{word-wrap:anywhere}
 .literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
 .colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
 .colist td:not([class]):first-child img{max-width:none}
@@ -387,7 +387,7 @@ a span.icon>.fa{cursor:inherit}
 .admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
 .admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
 .admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
-.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:50%;border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
 .conum[data-value] *{color:#fff!important}
 .conum[data-value]+b{display:none}
 .conum[data-value]::after{content:attr(data-value)}
@@ -414,7 +414,6 @@ thead{display:table-header-group}
 svg{max-width:100%}
 p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
 h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
-#header,#content,#footnotes,#footer{max-width:none}
 #toc,.sidebarblock,.exampleblock>.content{background:none!important}
 #toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
 body.book #header{text-align:center}
@@ -441,10 +440,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Devoxx4kids Microbit</h1>
+<h1>Microbit Workshop</h1>
 <div class="details">
 <span id="author" class="author">Matthijs Thoolen</span><br>
-<span id="email" class="email">&lt;<a href="mailto:matthijs.thoolen@codesquad.nl">matthijs.thoolen@codesquad.nl</a>&gt;</span><br>
+<span id="author2" class="author">Cor Faber</span><br>
+<span id="author3" class="author">Mike Padberg</span><br>
+<span id="author4" class="author">Jorick van Rhenen</span><br>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle">Inhoudsopgave</div>
+<ul class="sectlevel1">
+<li><a href="#_wat_is_de_microbit">Wat is de microbit?</a></li>
+<li><a href="#_programmeer_je_naam_in_licht_met_een_microbit">Programmeer je naam in licht met een Microbit</a></li>
+<li><a href="#_bouw_een_digitale_dobbelsteen">Bouw een digitale dobbelsteen</a></li>
+<li><a href="#_maak_een_digitaal_kompas_met_je_microbit">Maak een digitaal kompas met je Microbit</a></li>
+<li><a href="#_een_slimme_thermometer_maken">Een slimme thermometer maken</a></li>
+</ul>
 </div>
 </div>
 <div id="content">
@@ -458,13 +469,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_wat_is_de_microbit">Wat is de microbit?</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>In dit filmpje wordt uitgelegt wat een Microbit is en wat je er mee kunt doen.</p>
+</div>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/0EUzE_Q3W98?rel=0&amp;modestbranding=1" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 <div class="paragraph">
-<p>hopelijk is zo duidelijk wat we gaan doen. Heb je vragen? Steek dan zeker je hand even op!</p>
+<p>Hopelijk is zo duidelijk wat we gaan doen. Heb je vragen? Steek dan zeker je hand even op!</p>
 </div>
 </div>
 </div>
@@ -484,69 +498,76 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="_zelf_doen">Zelf doen</h3>
-<details>
-<summary class="title">Klik hier om de opdracht te openen</summary>
-<div class="content">
 <div class="paragraph">
-<p>Nu gaan we hetzelfde proberen als in het filmpje, maar dan met jullie eigen namen.
-. Ga naar <a href="http://makecode.microbit.org/">MakeCode</a>
-. Klik op 'Nieuw project' om een nieuw project te openen en geef het een naam, bijvoorbeeld 'Namen tonen'.
-. Neem daar de blokken over zoals getoond in het filmpje en neem in het 'toon tekens' blok een van jullie namen over.
-. Nu mag de volgende het proberen. Zorg ervoor dat als er 'B' ingedrukt wordt de andere naam in jullie tweetal toont.</p>
+<p>Nu gaan we hetzelfde proberen als in het filmpje, maar dan met jullie eigen namen.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Ga naar <a href="http://makecode.microbit.org/">MakeCode</a></p>
+</li>
+<li>
+<p>Klik op 'Nieuw project' om een nieuw project te openen en geef het een naam, bijvoorbeeld 'Namen tonen'.</p>
+</li>
+<li>
+<p>Neem daar de blokken over zoals getoond in het filmpje en neem in het 'toon tekens' blok een van jullie namen over.</p>
+</li>
+<li>
+<p>Nu mag de volgende het proberen. Zorg ervoor dat als er 'B' ingedrukt wordt de andere naam in jullie tweetal toont.</p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
 <p>Tip: mocht het te snel gaan, zet de video dan even op pauze of open onderstaande screenshots!</p>
 </div>
-</div>
-</details>
 <details>
 <summary class="title">Screenshots</summary>
 <div class="content">
 <div class="imageblock">
 <div class="content">
-<img src="images/programmeer-je-naam-in-licht-met-een-microbit/stap1.png" alt="stap1">
+<img src="opdrachten/naam/stap1.png" alt="stap1">
 </div>
 <div class="title">Stap 1</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/programmeer-je-naam-in-licht-met-een-microbit/stap2.png" alt="stap2">
+<img src="opdrachten/naam/stap2.png" alt="stap2">
 </div>
 <div class="title">Stap 2</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/programmeer-je-naam-in-licht-met-een-microbit/stap3.png" alt="stap3">
+<img src="opdrachten/naam/stap3.png" alt="stap3">
 </div>
 <div class="title">Stap 3</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/programmeer-je-naam-in-licht-met-een-microbit/stap4.png" alt="stap4">
+<img src="opdrachten/naam/stap4.png" alt="stap4">
 </div>
 <div class="title">Stap 4</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/programmeer-je-naam-in-licht-met-een-microbit/stap5.png" alt="stap5">
+<img src="opdrachten/naam/stap5.png" alt="stap5">
 </div>
 <div class="title">Stap 5</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/programmeer-je-naam-in-licht-met-een-microbit/stap6.png" alt="stap6">
+<img src="opdrachten/naam/stap6.png" alt="stap6">
 </div>
 <div class="title">Stap 6</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/programmeer-je-naam-in-licht-met-een-microbit/stap7.png" alt="stap7">
+<img src="opdrachten/naam/stap7.png" alt="stap7">
 </div>
 <div class="title">Stap 7</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/programmeer-je-naam-in-licht-met-een-microbit/stap8.png" alt="stap8">
+<img src="opdrachten/naam/stap8.png" alt="stap8">
 </div>
 <div class="title">Stap 8</div>
 </div>
@@ -558,96 +579,101 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_bouw_een_digitale_dobbelsteen">Bouw een digitale dobbelsteen</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>In deze opdracht gaan we van de Microbit een dobbelsteen maken. Als je er allebei klaar voor bent kun je het filmpje starten.</p>
+</div>
+<div class="sect2">
+<h3 id="_filmpje_2">Filmpje</h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/pY1bqTaSaJM?rel=0&amp;modestbranding=1" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_zelf_doen_2">Zelf doen</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Start je browser</p>
+<p>Ga naar <a href="http://makecode.microbit.org/">MakeCode</a></p>
 </li>
 <li>
-<p>Ga naar <a href="http://makecode.microbit.org/" class="bare">http://makecode.microbit.org/</a></p>
+<p>Klik op 'Nieuw project' om een nieuw project te openen en geef het een naam, bijvoorbeeld 'digitale dobbelsteen'.</p>
 </li>
 <li>
-<p>Klik op 'Nieuw project'</p>
-</li>
-<li>
-<p>Volg de instructies uit de video</p>
+<p>Volg de instructies uit de video en maak het programma na in je nieuwe project.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>Tip: mocht het te snel gaan, zet de video dan even op pauze</p>
+<p>Tip: mocht het te snel gaan, zet de video dan even op pauze of open onderstaande screenshots!</p>
 </div>
 <details>
 <summary class="title">Screenshots</summary>
 <div class="content">
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap1.png" alt="stap1">
+<img src="opdrachten/dobbelsteen/stap1.png" alt="stap1">
 </div>
 <div class="title">Stap 1</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap2.png" alt="stap2">
+<img src="opdrachten/dobbelsteen/stap2.png" alt="stap2">
 </div>
 <div class="title">Stap 2</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap3.png" alt="stap3">
+<img src="opdrachten/dobbelsteen/stap3.png" alt="stap3">
 </div>
 <div class="title">Stap 3</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap4.png" alt="stap4">
+<img src="opdrachten/dobbelsteen/stap4.png" alt="stap4">
 </div>
 <div class="title">Stap 4</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap5.png" alt="stap5">
+<img src="opdrachten/dobbelsteen/stap5.png" alt="stap5">
 </div>
 <div class="title">Stap 5</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap6.png" alt="stap6">
+<img src="opdrachten/dobbelsteen/stap6.png" alt="stap6">
 </div>
 <div class="title">Stap 6</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap7.png" alt="stap7">
+<img src="opdrachten/dobbelsteen/stap7.png" alt="stap7">
 </div>
 <div class="title">Stap 7</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap8.png" alt="stap8">
+<img src="opdrachten/dobbelsteen/stap8.png" alt="stap8">
 </div>
 <div class="title">Stap 8</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap9.png" alt="stap9">
+<img src="opdrachten/dobbelsteen/stap9.png" alt="stap9">
 </div>
 <div class="title">Stap 9</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap10.png" alt="stap10">
+<img src="opdrachten/dobbelsteen/stap10.png" alt="stap10">
 </div>
 <div class="title">Stap 10</div>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/bouw-een-digitale-dobbelsteen/stap11.png" alt="stap11">
+<img src="opdrachten/dobbelsteen/stap11.png" alt="stap11">
 </div>
 <div class="title">Stap 11</div>
 </div>
@@ -655,21 +681,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </details>
 </div>
 </div>
+</div>
 <div class="sect1">
 <h2 id="_maak_een_digitaal_kompas_met_je_microbit">Maak een digitaal kompas met je Microbit</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>De volgende opdracht gaat over het omtoveren van de Microbit in een echt kompas! Nieuwsgierig? Start dan het volgende filmpje.</p>
+</div>
+<div class="sect2">
+<h3 id="_filmpje_3">Filmpje</h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="480" src="https://www.youtube.com/embed/WV-jJ6ox7_g?rel=0&amp;modestbranding=1" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_zelf_doen_3">Zelf doen</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Start je browser</p>
-</li>
-<li>
-<p>Ga naar <a href="http://makecode.microbit.org/" class="bare">http://makecode.microbit.org/</a></p>
+<p>Ga naar <a href="http://makecode.microbit.org/">MakeCode</a></p>
 </li>
 <li>
 <p>Klik op 'Nieuw project'</p>
@@ -680,69 +712,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ol>
 </div>
 <div class="paragraph">
-<p>Tip: mocht het te snel gaan, zet de video dan even op pauze</p>
+<p>Tip: mocht het te snel gaan, zet de video dan even op pauze of open onderstaande screenshots!</p>
+</div>
+<div class="paragraph">
+<p>Als je wat meer uitdaging wilt, kun je als je klaar bent ook de extra opdracht nog doen.
+.Extra opdracht</p>
 </div>
 <details>
-<summary class="title">Screenshots</summary>
-<div class="content">
-<div class="imageblock">
-<div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/stap1.png" alt="stap1">
-</div>
-<div class="title">Stap 1</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/stap2.png" alt="stap2">
-</div>
-<div class="title">Stap 2</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/stap3.png" alt="stap3">
-</div>
-<div class="title">Stap 3</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/stap4.png" alt="stap4">
-</div>
-<div class="title">Stap 4</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/stap5.png" alt="stap5">
-</div>
-<div class="title">Stap 5</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/stap6.png" alt="stap6">
-</div>
-<div class="title">Stap 6</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/stap7.png" alt="stap7">
-</div>
-<div class="title">Stap 7</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/stap8.png" alt="stap8">
-</div>
-<div class="title">Stap 8</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/stap9.png" alt="stap9">
-</div>
-<div class="title">Stap 9</div>
-</div>
-</div>
-</details>
-<details>
-<summary class="title">Extra opdracht</summary>
+<summary class="title">Details</summary>
 <div class="content">
 <div class="paragraph">
 <p>Probeer samen de volgende vraag te beantwoorden:</p>
@@ -760,7 +737,7 @@ dan 45?</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/extra-opdracht-1/kompas-roos.jpg" alt="kompas roos">
+<img src="opdrachten/kompas/extra-opdracht-1/kompas-roos.jpg" alt="kompas roos">
 </div>
 <div class="title">8 windrichtingen<br></div>
 </div>
@@ -777,6 +754,68 @@ dan 45?</p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>Lijkt alles goed te werken? Als je klaar bent, kun je onderaan deze opdracht de uitwerking vinden om de uitkomst te controleren.</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Screenshots</summary>
+<div class="content">
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/kompas/stap1.png" alt="stap1">
+</div>
+<div class="title">Stap 1</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/kompas/stap2.png" alt="stap2">
+</div>
+<div class="title">Stap 2</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/kompas/stap3.png" alt="stap3">
+</div>
+<div class="title">Stap 3</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/kompas/stap4.png" alt="stap4">
+</div>
+<div class="title">Stap 4</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/kompas/stap5.png" alt="stap5">
+</div>
+<div class="title">Stap 5</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/kompas/stap6.png" alt="stap6">
+</div>
+<div class="title">Stap 6</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/kompas/stap7.png" alt="stap7">
+</div>
+<div class="title">Stap 7</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/kompas/stap8.png" alt="stap8">
+</div>
+<div class="title">Stap 8</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/kompas/stap9.png" alt="stap9">
+</div>
+<div class="title">Stap 9</div>
+</div>
 </div>
 </details>
 <details>
@@ -784,7 +823,7 @@ dan 45?</p>
 <div class="content">
 <div class="imageblock">
 <div class="content">
-<img src="images/maak-een-digitaal-kompas-met-je-microbit/extra-opdracht-1/uitwerking.png" alt="uitwerking">
+<img src="opdrachten/kompas/extra-opdracht-1/uitwerking.png" alt="uitwerking">
 </div>
 <div class="title">Oplossing</div>
 </div>
@@ -792,34 +831,103 @@ dan 45?</p>
 </details>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_vijfde_video">vijfde video</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>beschrijving bij derde video</p>
-</div>
-</div>
 </div>
 <div class="sect1">
-<h2 id="_zesde_video">zesde video</h2>
+<h2 id="_een_slimme_thermometer_maken">Een slimme thermometer maken</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>beschrijving bij derde video</p>
+<p>We gaan nu met de temperatuur sensor op de Microbit een programma maken die ons vertelt hoe dik we ons moeten kleden. Als je er klaar voor bent kun je dat gaan doen met behulp van het filmpje hier onder. Als de instructies in het filmpje niet duidelijk zijn of je hebt een andere vraag, steek dan even je hand op. Wij helpen jullie graag!</p>
+</div>
+<div class="sect2">
+<h3 id="_filmpje_4">Filmpje</h3>
+<div class="videoblock">
+<div class="content">
+<iframe width="640" height="480" src="https://www.youtube.com/embed/YkJq9MJ21C8?rel=0&amp;start=166&amp;modestbranding=1" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_extra_opdrachten">extra opdrachten</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_zelf_doen_4">Zelf doen</h3>
+<details>
+<summary class="title">Klik hier om de opdracht te openen</summary>
+<div class="content">
 <div class="paragraph">
-<p>mogelijke extra opdrachten</p>
+<p>Nu gaan we hetzelfde proberen als in het filmpje, maar dan met jullie eigen namen.
+. Maak een nieuw project en geef die een naam, bijvoorbeeld 'slimme thermometer'
+. Neem daar de blokken over zoals getoond in het filmpje.
+. Werkt alles zoals het zou moeten? Mooi! Op naar de volgende opdracht.</p>
+</div>
+<div class="paragraph">
+<p>Tip: mocht het te snel gaan, zet de video dan even op pauze of open onderstaande screenshots!</p>
+</div>
+</div>
+</details>
+<details>
+<summary class="title">Screenshots</summary>
+<div class="content">
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/thermometer/stap1.png" alt="stap1">
+</div>
+<div class="title">Stap 1</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/thermometer/stap2.png" alt="stap2">
+</div>
+<div class="title">Stap 2</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/thermometer/stap3.png" alt="stap3">
+</div>
+<div class="title">Stap 3</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/thermometer/stap4.png" alt="stap4">
+</div>
+<div class="title">Stap 4</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/thermometer/stap5.png" alt="stap5">
+</div>
+<div class="title">Stap 5</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/thermometer/stap6.png" alt="stap6">
+</div>
+<div class="title">Stap 6</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/thermometer/stap7.png" alt="stap7">
+</div>
+<div class="title">Stap 7</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/thermometer/stap8.png" alt="stap8">
+</div>
+<div class="title">Stap 8</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="opdrachten/thermometer/stap9.png" alt="stap9">
+</div>
+<div class="title">Stap 9</div>
+</div>
+</div>
+</details>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-01-17 22:18:01 +0100
+Last updated 2021-01-29 14:45:22 +0100
 </div>
 </div>
 </body>
