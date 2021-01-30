@@ -39,3 +39,24 @@ image::opdrachten/dobbelsteen/stap10.png[]
 .Stap 11
 image::opdrachten/dobbelsteen/stap11.png[]
 ====
+
+.Extra opdracht
+[%collapsible]
+====
+Doel van deze extra opdracht is het maken van een valsspeel dobbelsteen.
+
+Regels:
+
+. Als je op de A knop drukt en daarna de microbit schud, dan gooit de dobbelsteen altijd een 6
+. Als je op de B knop drukt en daarna de microbit schud, dan gooit de dobbelsteen een wisselkeurig getal tussen de 1 en de 6
+====
+
+.Antwoord Extra opdracht
+[%collapsible]
+====
+Dit is een antwoord, maar er zijn meerdere goede antwoorden!
+
+image::opdrachten/dobbelsteen/extra-opdracht-1.png[]
+
+image::opdrachten/dobbelsteen/extra-opdracht-2.png[]
+====
