@@ -37,3 +37,22 @@ image::opdrachten/naam/stap7.png[]
 .Stap 8
 image::opdrachten/naam/stap8.png[]
 ====
+
+.Extra opdracht
+[%collapsible]
+====
+Doel van deze extra opdracht is jullie beide namen te laten zien
+
+Regels:
+
+. Als je op de A knop drukt dan moet de naam van de jongste persoon op het scherm komen te staan
+. Als je op de B knop drukt dan moet de naam van de oudste persoon op het scherm komen te staan
+====
+
+.Antwoord Extra opdracht
+[%collapsible]
+====
+Dit is een antwoord, maar er zijn meerdere goede antwoorden!
+
+image::opdrachten/naam/extra-opdracht-1.png[]
+====
