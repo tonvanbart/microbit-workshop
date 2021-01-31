@@ -7,7 +7,7 @@ Matthijs Thoolen; Cor Faber; Mike Padberg; Jorick van Rhenen
 :toclevels: 1
 :toc:
 
-In deze workshop gaan we samen aan de slag met de Microbit. Aan de hand van een aantal video's maken we opdrachten met de Microbit. We beginnen eerst met een uitleg, want wat is die Microbit eigenlijk? 
+In deze workshop gaan we samen aan de slag met de Microbit. Aan de hand van een aantal video's maken we opdrachten met de Microbit. We beginnen eerst met een uitleg, want wat is die Microbit eigenlijk?
 
 == Wat is de microbit?
 
@@ -21,5 +21,4 @@ include::opdrachten/naam/naam.adoc[]
 include::opdrachten/dobbelsteen/dobbelsteen.adoc[]
 include::opdrachten/kompas/kompas.adoc[]
 include::opdrachten/thermometer/thermometer.adoc[]
-
-
+include::opdrachten/steenpapierschaar/steenpapierschaar.adoc[]
