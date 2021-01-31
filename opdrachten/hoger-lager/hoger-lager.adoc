@@ -277,3 +277,69 @@ Probeer je zelfgemaakte spel eens uit!
 
 ====
 
+.Hoger-Lager - Code optimaliseren met Functies
+[%collapsible]
+====
+
+Zoals eerder aangegeven, hebben we voor de makkelijke oplossing gekozen door de code van knop A te kopiëren om snel de code voor knop B voor elkaar te krijgen. Dit is niet helemaal netjes. Het was netter geweest om de code die uitgevoerd moet worden als je het goed of fout raadt, in een aparte functie te stoppen. Deze functie kun je dan op elke plek in je code gaan aanroepen. Hiermee voorkom je dubbele code en maakt ook het onderhoud van je code makkelijker. Bij een wijziging hoef je namelijk niet elk gekopieerd stukje code aan te passen.
+
+Functies toevoegen:
+
+======
+
+Stap I:
+
+* Maak de volgende twee functies aan:
+- goed geraden
+- fout geraden
+
+Resultaat:
+
+.Twee lege functies.
+image::opdrachten/hoger-lager/functies1.png[]
+
+Tips:
+
+* Maak een functie aan vanuit '_Functies_'. Verander de naam '_doeIets_' in iets dat verteld wat de functie gaat doen.
+
+======
+======
+
+Stap II:
+
+De code die je uitvoert, wanneer je iets goed hebt geraden en wanneer je iets niet goed hebt geraden, kunnen we nu gaan verplaatsen naar de bijbehorende functies.
+
+Resultaat:
+
+.Functie 'goed geraden'.
+image::opdrachten/hoger-lager/functies2.png[]
+
+.Functie 'fout geraden'.
+image::opdrachten/hoger-lager/functies3.png[]
+
+.Voor knop A is de 'als waar dan anders' nu nog leeg.
+image::opdrachten/hoger-lager/functies4.png[]
+
+======
+======
+
+Stap III:
+
+Nu gaan we vanuit de code die bij knop A en B hoort op de juiste plekken de juiste functies aanroepen.
+
+* Voeg de aanroepblokken van de functies '_goed geraden_' en '_fout geraden_' toe.
+* Plaats deze op de juiste plek in het code blok van knop A.
+* Pas het code blok van knop B op dezelfde manier aan.
+
+Resultaat:
+
+.Je code ziet er nu een stuk overzichtelijker en minder complex uit.
+image::opdrachten/hoger-lager/functies5.png[]
+
+Tips:
+
+* Voeg de aanroepblokken van de functies toe vanuit '_Functies_'.
+
+======
+====
+
