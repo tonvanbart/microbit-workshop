@@ -18,7 +18,9 @@ video::0EUzE_Q3W98[youtube,options="modest",width=640,height=480]
 Hopelijk is zo duidelijk wat we gaan doen. Heb je vragen? Steek dan zeker je hand even op!
 
 include::opdrachten/naam/naam.adoc[]
+include::opdrachten/kloppend-hart/kloppend-hart.adoc[]
 include::opdrachten/dobbelsteen/dobbelsteen.adoc[]
 include::opdrachten/kompas/kompas.adoc[]
 include::opdrachten/thermometer/thermometer.adoc[]
 include::opdrachten/steenpapierschaar/steenpapierschaar.adoc[]
+include::opdrachten/hoger-lager/hoger-lager.adoc[]
