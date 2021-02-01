@@ -11,7 +11,7 @@ In deze workshop gaan we samen aan de slag met de Microbit. Aan de hand van een 
 
 == Wat is de microbit?
 
-In dit filmpje wordt uitgelegt wat een Microbit is en wat je er mee kunt doen.
+In dit filmpje wordt uitgelegd wat een Microbit is en wat je er mee kunt doen.
 
 video::0EUzE_Q3W98[youtube,options="modest",width=640,height=480]
 
