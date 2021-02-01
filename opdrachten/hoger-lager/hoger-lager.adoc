@@ -235,6 +235,7 @@ Stap VII:
 
 Probeer je code in de editor maar eens uit. Tussendoor je code even testen is altijd goed! Dan ontdek je eerder of je ergens een foutje hebt gemaakt.
 
+======
 ====
 
 .Hoger-Lager - Knop B (hoger)
@@ -275,6 +276,7 @@ Stap II:
 
 Probeer je zelfgemaakte spel eens uit!
 
+======
 ====
 
 .Hoger-Lager - Code optimaliseren met Functies
