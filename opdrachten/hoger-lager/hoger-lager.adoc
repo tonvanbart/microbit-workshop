@@ -52,7 +52,6 @@ Tips:
 image::opdrachten/hoger-lager/opstarten1.png[]
 
 ======
-======
 
 Stap II:
 
