@@ -1,0 +1,18 @@
+name: build workshop html
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-workshop-html:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: asciidoctor-ghpages
+      uses: manoelcampos/asciidoctor-ghpages-action@v2
+      with:
+        pdf_build: true
+        ebook_main_adoc_file: microbit
+        post_build: mv microbit.html index.html
