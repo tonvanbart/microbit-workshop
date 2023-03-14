@@ -51,7 +51,7 @@ Regels:
 . Als je op de B knop drukt en daarna de microbit schud, dan gooit de dobbelsteen een wisselkeurig getal tussen de 1 en de 6
 ====
 
-.Antwoord Extra opdracht
+.Uitwerking extra opdracht
 [%collapsible]
 ====
 Dit is een antwoord, maar er zijn meerdere goede antwoorden!

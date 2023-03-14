@@ -1,5 +1,5 @@
 = Microbit Workshop
-Matthijs Thoolen; Cor Faber; Mike Padberg; Jorick van Rhenen
+Matthijs Thoolen; Cor Faber; Mike Padberg; Jorick van Rhenen;Ton van Bart; Steven Frederiks
 :Revision:  0.1
 :description: Devoxx4kids Microbit workshop
 :figure-caption!:
