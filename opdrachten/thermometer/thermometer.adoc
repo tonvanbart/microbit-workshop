@@ -17,6 +17,7 @@ Nu gaan we hetzelfde proberen als in het filmpje, maar dan met jullie eigen name
 . Werkt alles zoals het zou moeten? Mooi! Op naar de volgende opdracht.
 
 Tip: mocht het te snel gaan, zet de video dan even op pauze of open onderstaande screenshots!
+
 .Screenshots
 [%collapsible]
 ====
